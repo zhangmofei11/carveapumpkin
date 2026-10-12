@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Carve a Pumpkin Guide</title>
+    <meta name="description" content="About the Carve a Pumpkin guide website.">
+    <link rel="canonical" href="https://carveapumpkin.site/about.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        pumpkin: { orange: '#FF6B00', dark: '#8B4513', cream: '#FFF8DC', glow: '#FFD700' }
+                    },
+                    fontFamily: { 'creepy': ['Creepster', 'cursive'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1a1a1a 0%, #2d1f3d 50%, #1a1a1a 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-pumpkin { background: linear-gradient(135deg, rgba(139,69,19,0.9) 0%, rgba(26,26,26,0.95) 100%); border: 1px solid rgba(255,107,0,0.3); }
+        .text-pumpkin { color: #FF6B00; }
+        .text-cream { color: #FFF8DC; }
+        .glow-orange { box-shadow: 0 0 20px rgba(255,107,0,0.4); }
+        .divider { height: 2px; background: linear-gradient(90deg, transparent, #FF6B00, #FFD700, #FF6B00, transparent); }
+        .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 2px); z-index: 9999; }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSV9HMT98E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QSV9HMT98E');
+    </script>
+</head>
+<body class="text-cream antialiased">
+    <div class="scanline"></div>
+
+    <header class="card-pumpkin sticky top-0 z-50 border-b border-pumpkin/orange/20">
+        <div class="max-w-6xl mx-auto px-8 py-5">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-orange to-dark flex items-center justify-center shadow-lg glow-orange">
+                        <span class="text-3xl">🎃</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-2xl text-cream tracking-wide">CARVE A PUMPKIN</span>
+                        <span class="block text-xs text-pumpkin/orange tracking-widest">ROBLOX HALLOWEEN</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2">
+                    <a href="/" class="px-4 py-2 text-cream/70 hover:text-pumpkin/orange hover:bg-pumpkin/orange/5 rounded-lg transition-all">Home</a>
+                    <a href="seeds.html" class="px-4 py-2 text-cream/70 hover:text-pumpkin/orange hover:bg-pumpkin/orange/5 rounded-lg transition-all">Seeds</a>
+                    <a href="tips.html" class="px-4 py-2 text-cream/70 hover:text-pumpkin/orange hover:bg-pumpkin/orange/5 rounded-lg transition-all">Tips</a>
+                    <a href="gallery.html" class="px-4 py-2 text-cream/70 hover:text-pumpkin/orange hover:bg-pumpkin/orange/5 rounded-lg transition-all">Gallery</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-8 py-16">
+        <h1 class="text-4xl font-bold text-cream mb-8">About</h1>
+
+        <div class="card-pumpkin rounded-xl p-8">
+            <h2 class="text-2xl font-bold text-pumpkin/orange mb-4">About This Guide</h2>
+            <p class="text-cream/70 mb-4">
+                This is an unofficial fan guide for Carve a Pumpkin on Roblox.
+            </p>
+            <p class="text-cream/70 mb-4">
+                Carve a Pumpkin is a Halloween-themed Roblox experience where players grow pumpkins, carve designs, and compete in voting contests. This guide helps you master the game.
+            </p>
+            <p class="text-cream/70">
+                This guide is not affiliated with Roblox Corporation.
+            </p>
+        </div>
+    </main>
+
+    <footer class="border-t border-pumpkin/orange/10 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-8 text-center">
+            <div class="divider mb-4"></div>
+            <p class="text-cream/40 text-sm">&copy; 2026 Carve a Pumpkin Guide</p>
+        </div>
+    </footer>
+</body>
+</html>
